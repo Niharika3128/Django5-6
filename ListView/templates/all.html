@@ -1,0 +1,25 @@
+
+
+<table align="center" border="2">
+    <tr>
+        <th width="100">IDNO</th>
+        <th width="100">NAME</th>
+        <th width="100">SALARY</th>
+    </tr>
+
+    {% for object in object_list %}
+        <tr>
+
+            <th width="100">
+                 <a href="/showone{{ object.idno }}/">
+                     {{ object.idno }}
+                 </a>
+            </th>
+
+        <th width="100">{{ object.name }}</th>
+        <th width="100">{{ object.salary }}</th>
+    </tr>
+    {% endfor %}
+</table>
+
+

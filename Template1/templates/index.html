@@ -1,0 +1,39 @@
+
+<html>
+    <body>
+        <h3>int Variable Example --- {{ data1 }}</h3>
+        <h3>string(str)Variable Example --- {{ data2 }}</h3>
+        {% comment %}
+            Calling String class Functions/Methods
+        {% endcomment %}
+        <h3>string(str)Variable Example --- {{ data2.lower }}</h3>
+        <h3>string(str)Variable Example --- {{ data2.upper }}</h3>
+        <h3>string(str)Variable Example --- {{ data2.isalpha }}</h3>
+        <h3>string(str)Variable Example --- {{ data2.isdecimal }}</h3>
+        {% comment %}
+            Using List and List Class Function/Methods
+        {% endcomment %}
+        <h3>list Variable Example --- {{ data3 }}</h3>
+        <h3>list Variable Example --- {{ data3.0 }}</h3>
+        <h3>list Variable Example --- {{ data3.pop }}</h3>
+        <h3>list Variable Example --- {{ data3 }}</h3>
+        <h3>list Variable Example --- {{ data3.reverse }}</h3>
+        <h3>list Variable Example --- {{ data3 }}</h3>
+        <h3>list Variable Example --- {{ data3.sort }}</h3>
+        <h3>list Variable Example --- {{ data3 }}</h3>
+
+        {% comment %}
+            dict and dict class Functions/methods
+        {% endcomment %}
+
+        <h3>Dict Variable Example --- {{ data4 }}</h3>
+        <h3>Dict Variable Example --- {{ data4.idno }}</h3>
+        <h3>Dict Variable Example --- {{ data4.name }}</h3>
+        <h3>Dict Variable Example --- {{ data4.salary }}</h3>
+
+        <h3>Dict Variable Example --- {{ data4.items }}</h3>
+        <h3>Dict Variable Example --- {{ data4.keys }}</h3>
+        <h3>Dict Variable Example --- {{ data4.values }}</h3>
+
+    </body>
+</html>

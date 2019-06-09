@@ -1,0 +1,13 @@
+
+<table border="2" align="center">
+    <tr><th bgcolor="aqua">Article</th></tr>
+
+    {% for x in data %}
+        <tr>
+            <th>{{ x.title }}</th>
+            {% for y in x.publicate.all %}
+                <th>{{ y.title }}</th>
+            {% endfor %}
+        </tr>
+    {% endfor %}
+</table>

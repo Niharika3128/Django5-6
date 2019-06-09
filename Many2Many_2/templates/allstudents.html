@@ -1,0 +1,17 @@
+
+<table align="center" border="2">
+    <tr><th>Student Name</th></tr>
+
+    {% for x in object_list %}
+        <tr>
+            <th>{{ x.name }}</th>
+            <td>
+            {% for y in x.join_course.all %}
+               {{ y.name }} --
+            {% endfor %}
+            </td>
+            <th>{{ x.doj }}</th>
+        </tr>
+    {% endfor %}
+
+</table>

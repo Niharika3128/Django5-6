@@ -1,0 +1,18 @@
+
+<html>
+    <body>
+
+        <form action="/savedetails/" method="post">
+            {% csrf_token %}
+
+        <table align="center" border="2">
+            <tr><th width="250">Update Employee</th></tr>
+            <tr><th><input type="number" name="idno" value="{{ data.idno }}" readonly></th></tr>
+            <tr><th><input type="text" name="name" value="{{ data.name }}"></th></tr>
+            <tr><th><input type="decimal" name="salary" value="{{ data.salary }}"></th></tr>
+            <tr><th><button type="submit">Save</button> </th></tr>
+        </table>
+
+        </form>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+
+<table align="center" border="2">
+    <tr><th colspan="3">Product Details</th></tr>
+    <tr bgcolor="yellow">
+        <th width="150">ID</th>
+        <th width="150">NAME</th>
+        <th width="150">Price</th>
+    </tr>
+    {% for x in data %}
+     <tr>
+        <td width="150">{{ x.id }}</td>
+        <td width="150">{{ x.name }}</td>
+        <td width="150">{{ x.price }}</td>
+    </tr>
+    {% endfor %}
+    <tr>
+        <th>
+            {% if data.has_previous %}
+                <a href="/index/?pageno={{ data.previous_page_number }}">
+                    Previous
+                </a>
+            {% endif %}
+        </th>
+        <th bgcolor="#7cfc00">
+            Current Page No : {{ data.number }}
+        </th>
+        <th>
+            {% if data.has_next %}
+                <a href="/index/?pageno={{ data.next_page_number }}">
+                    Next
+                </a>
+            {% endif %}
+        </th>
+    </tr>
+</table>
+

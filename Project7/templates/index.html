@@ -1,0 +1,20 @@
+
+
+<html>
+<body>
+     <table align="center" border="2">
+         <tr bgcolor="#adff2f">
+             <th width="100">IDNO</th>
+             <th width="100">NAME</th>
+             <th width="100">SALARY</th>
+         </tr>
+         {% for x,y in data.items %}
+             <tr bgcolor="#ffe4c4">
+                <td>{{ x }}</td>
+                <td>{{ y.name }}</td>
+                <td>{{ y.salary }}</td>
+             </tr>
+         {% endfor %}
+     </table>
+</body>
+</html>

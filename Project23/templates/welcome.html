@@ -1,0 +1,19 @@
+
+{% if request.session.status %}
+
+<h1>Welcome</h1>
+<form action="{% url 'sendmail' %}" method="get">
+    <button type="submit">Send Mail</button>
+</form>
+
+<br>
+<br>
+<form action="{% url 'logout' %}" method="get">
+    <button type="submit">Logout</button>
+</form>
+
+{% else %}
+
+    <h1> Sorry Please Login</h1>
+
+{% endif %}

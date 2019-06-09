@@ -1,0 +1,8 @@
+
+<h1>To Delete Employee Click on Yes</h1>
+<form method="post">
+    {% csrf_token %}
+    <h2>{{ object.idno }}</h2>
+    <h2>{{ object.name }}</h2>
+    <button type="submit">Yes</button>
+</form>

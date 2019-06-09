@@ -1,0 +1,25 @@
+<html>
+<body>
+{##}
+{#    <h3>{{ data1 }}</h3>#}
+{#    <h3>{{ data1|add:"2" }}</h3>#}
+{#    <h3>{{ data1|add:2 }}</h3>#}
+{##}
+{#    <h3>{{ data2 }}</h3>#}
+{#    <h3>{{ data2|addslashes }}</h3>#}
+{##}
+{#    <h3> {{ data3 }}</h3>#}
+{#    <h3> {{ data3|capfirst }}</h3>#}
+{##}
+{#    <h3> {{ data4 }}</h3>#}
+{#    <h3> {{ data4|length }}</h3>#}
+{#    <h3> {{ data4|length_is:"6" }}</h3>#}
+
+
+        {% load humanize %}
+
+        {{ data1|apnumber }}
+        {{ data5|naturalday:"F d" }}
+
+</body>
+</html>

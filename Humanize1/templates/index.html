@@ -1,0 +1,18 @@
+
+
+{% load humanize %}
+<html>
+    <body>
+        <h3>{{ data1 }} --- {{ data1 }}</h3>
+        <h3>{{ data2 }} --- {{ data2|apnumber }}</h3>
+        <h3>{{ data3 }} --- {{ data3|apnumber }}</h3>
+        <h3>{{ data4 }} --- {{ data4|apnumber }}</h3>
+
+
+        <h3>{{ data5 }} --- {{ data5|intcomma }}</h3>
+        <h3>{{ data6 }} --- {{ data6|intcomma }}</h3>
+
+        <h3>{{ data6 }} --- {{ data6|intword }}</h3>
+
+    </body>
+</html>
